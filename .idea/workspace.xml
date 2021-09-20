@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="630cb1fa-8d05-4565-999f-877023ea32ff" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1xoF9BB6YnX9p7K5mDzc2ug9oVN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/laravel/resources/views/calendarComponents" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\DeskScheduler\laravel\public\js" />
+      <recent name="C:\wamp64\www\DeskScheduler\laravel\resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\DeskScheduler\laravel\resources\views\calendarComponents" />
+      <recent name="C:\wamp64\www\DeskScheduler\laravel\public\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="630cb1fa-8d05-4565-999f-877023ea32ff" name="Default Changelist" comment="" />
+      <created>1631013380826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631013380826</updated>
+      <workItem from="1631013382036" duration="15019000" />
+      <workItem from="1631097084523" duration="3773000" />
+      <workItem from="1631192107590" duration="4336000" />
+      <workItem from="1631539401453" duration="8854000" />
+      <workItem from="1631624304357" duration="7125000" />
+      <workItem from="1631796921172" duration="5018000" />
+      <workItem from="1631877827121" duration="14350000" />
+      <workItem from="1631952094008" duration="2521000" />
+      <workItem from="1632049352764" duration="7163000" />
+      <workItem from="1632136709659" duration="2874000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1631541122444">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631541122444" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1631024542968">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631024542968" />
+    <state x="-1927" y="0" width="974" height="1047" key="dock-window-1" timestamp="1632055216167">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1927" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1632055216167" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1631100041871">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631100041871" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1631798301131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631798301131" />
+  </component>
+</project>
