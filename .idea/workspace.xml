@@ -18,16 +18,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1xoF9BB6YnX9p7K5mDzc2ug9oVN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/laravel/resources/views/calendarComponents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/laravel/database/migrations" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -36,6 +41,7 @@
       <recent name="C:\wamp64\www\DeskScheduler\laravel\resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Personal\DeskScheduler\laravel\database\migrations" />
       <recent name="C:\wamp64\www\DeskScheduler\laravel\resources\views\calendarComponents" />
       <recent name="C:\wamp64\www\DeskScheduler\laravel\public\css" />
     </key>
@@ -58,6 +64,15 @@
       <workItem from="1631952094008" duration="2521000" />
       <workItem from="1632049352764" duration="7163000" />
       <workItem from="1632136709659" duration="2874000" />
+      <workItem from="1632147509187" duration="673000" />
+      <workItem from="1632310254804" duration="3906000" />
+      <workItem from="1632401178572" duration="623000" />
+      <workItem from="1632478909003" duration="3797000" />
+      <workItem from="1632736829482" duration="1703000" />
+      <workItem from="1632826863777" duration="3511000" />
+      <workItem from="1632903807740" duration="2449000" />
+      <workItem from="1634730529169" duration="3686000" />
+      <workItem from="1637760087492" duration="1668000" />
     </task>
     <servers />
   </component>
@@ -65,14 +80,30 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632486499662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1632486499662" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1631541122444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631541122444" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1632907294051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1632907294051" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1632485877519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1632485877519" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1631024542968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631024542968" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1632314148896">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1632314148896" />
     <state x="-1927" y="0" width="974" height="1047" key="dock-window-1" timestamp="1632055216167">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -81,9 +112,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631100041871" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1631798301131">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1634743268501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1631798301131" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1634743268501" />
   </component>
 </project>

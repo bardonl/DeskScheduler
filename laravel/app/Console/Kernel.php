@@ -24,7 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        $path = __DIR__ .'/python/test.py';
+        $schedule->exec('python ' . $path)->everyMinute()->timezone('Europe/Amsterdam');
     }
 
     /**

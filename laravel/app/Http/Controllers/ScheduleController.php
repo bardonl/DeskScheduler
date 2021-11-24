@@ -43,6 +43,8 @@ class ScheduleController extends Controller
         $scheduled = Schedule::query()->select(['id','day','start_time','end_time'])->orderBy('day','ASC')->get();
         $scheduled = $scheduled->toArray();;
 
+        $days = [];
+
         foreach ($scheduled as $scheduledItem){
             for($d = 0; $d < 7; $d++){
                 if($scheduledItem['day'] === $d){

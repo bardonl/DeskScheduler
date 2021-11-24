@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PythonController;
 use App\Http\Controllers\ScheduleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::delete('/schedules/delete',[ScheduleController::class, "deleteTime"]);
 Route::post('/schedules/save',[ScheduleController::class, "saveTime"]);
 Route::get('/schedules/get',[ScheduleController::class, "getScheduled"]);
+
+Route::get('/python/runTest',[PythonController::class, "runTest"]);
