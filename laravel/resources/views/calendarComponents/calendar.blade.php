@@ -1,4 +1,3 @@
-@section('calendar')
     <div class="content-container">
         <div class="schedule-container">
             <div class="time-indicator-table">
@@ -79,3 +78,4 @@
     <div class="schedule-active" onclick="popup(this, false)">
 
     </div>
+
