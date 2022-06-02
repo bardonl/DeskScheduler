@@ -16,16 +16,10 @@ class Kernel extends ConsoleKernel
         //
     ];
 
-    /**
-     * Define the application's command schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
-     */
     protected function schedule(Schedule $schedule)
     {
-        $path = __DIR__ .'/python/test.py';
-        $schedule->exec('python ' . $path)->everyMinute()->timezone('Europe/Amsterdam');
+        $path = __DIR__ .'/python/new.py';
+        $schedule->exec('python ' . $path)->everyMinute();
     }
 
     /**
