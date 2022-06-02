@@ -33,11 +33,12 @@ config = {
 
 cnx = mysql.connector.connect(**config)
 cursor = cnx.cursor(dictionary=True)
-query = """SELECT id, day, start_time, end_time, movement FROM `schedules` WHERE `day` = %s AND `start_time` >= %s;"""
+query = """SELECT id, day, start_time, end_time, movement FROM `schedules` WHERE `day` = %s AND `start_time` <= %s;"""
 cursor.execute(query,(day,time_now,))
 data = cursor.fetchall()
 
 if data:
+    print(data)
     t_end = time.time() + 9
     for row in data:
       if(str(row["start_time"]) <= str(time_now) and str(row["end_time"]) >= str(time_now) and row["movement"] == 0):
@@ -50,7 +51,7 @@ if data:
           query = """UPDATE `schedules` SET `movement` = 1 WHERE `id` = %s;"""
           cursor.execute(query,(row["id"],))
           cnx.commit()
-      elif(str(row["end_time"]) >= str(time_now) and row["movement"] == 1):
+      elif(str(row["end_time"]) <= str(time_now) and row["movement"] == 1):
           print("move down")
           while time.time() < t_end:
               pi.set_PWM_dutycycle(17,200)
@@ -61,6 +62,7 @@ if data:
           cnx.commit()
       else:
           print("stay idle")
+          
       print(row["end_time"])
       f.write(" ".join(map(str, row)))
       f.write('\n')
