@@ -19,7 +19,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $path = __DIR__ .'../../../python/new.py';
-        $schedule->exec('python ' . $path)->everyMinute();
+        $schedule->exec('python3 ' . $path)->everyMinute();
     }
 
     /**
