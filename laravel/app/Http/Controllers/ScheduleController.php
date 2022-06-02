@@ -57,7 +57,12 @@ class ScheduleController extends Controller
                     $scheduledItem['start_time'] = $start->format('H:i');
                     $scheduledItem['end_time'] = $end->format('H:i');
                     $scheduledItem['q_amount'] = ($diff->h*4) + ($diff->i/15);
-                    $scheduledItem['h_start'] = substr($h, 1,1);;
+                    if (substr($h, 0, 1) === '0') {
+                        $scheduledItem['h_start'] = substr($h, 1,1);
+                    } else {
+                        $scheduledItem['h_start'] = $h;
+                    }
+
                     $scheduledItem['q_start'] = $q;
                     $days[$d][] = $scheduledItem;
                 }
