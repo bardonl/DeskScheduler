@@ -28,13 +28,22 @@ config = {
 }
 
 cnx = mysql.connector.connect(**config)
-cursor = cnx.cursor()
-query = ("SELECT id, day, start_time, end_time FROM `schedules`")
-cursor.execute(query)
+cursor = cnx.cursor(dictionary=True)
+query = """SELECT id, day, start_time, end_time, movement FROM `schedules` WHERE day = %s AND start_time <= %s"""
+cursor.execute(query,(day,time))
 data = cursor.fetchall()
 
 if data:
+    print(data)
     for row in data:
+      print(str(day))
+      print(str(time))
+      print(row["start_time"])
+      if(str(row["start_time"]) <= time and str(row["end_time"]) >= time and movement === 0):
+          print("move up")
+      if(str(row["end_time"]) <= time and movement === 1):
+          print("move down")
+      print(row["end_time"])
       f.write(" ".join(map(str, row)))
       f.write('\n')
 
