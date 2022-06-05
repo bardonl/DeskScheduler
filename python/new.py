@@ -38,7 +38,8 @@ cursor.execute(query,(day,time_now,))
 data = cursor.fetchall()
 
 if data:
-    print(data)
+    print(str(day))
+    print(str(time_now))
     t_end = time.time() + 9
     for row in data:
       if(str(row["start_time"]) <= str(time_now) and str(row["end_time"]) >= str(time_now) and row["movement"] == 0):
