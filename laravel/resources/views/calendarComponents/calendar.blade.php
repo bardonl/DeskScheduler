@@ -8,12 +8,18 @@
                 @endfor
             </div>
             <div class="days-container">
+
                 @for($d = 0; $d <= 6; $d++)
                 <div class="day">
-                    <div class="title">
+                    <div class="title day-header">
                         <span>{{$days[$d]}}</span>
                     </div>
-                    <div class="hours-container">
+                    <div class="hours-container @if($d == $currentDay) active-day @endIf">
+                        @if($d == $currentDay)
+                            <div class="indicator" data-day="{{$d}}">
+
+                            </div>
+                        @endIf
                         @for($h = 0; $h < 24; $h++)
                             @for($q = 0; $q < 4; $q++)
                                 @if(key_exists($d,$scheduled))
@@ -75,7 +81,37 @@
         </div>
     </div>
 
+<!-- Modal -->
+<div class="modal fade" id="warning" tabindex="-1" role="dialog" aria-labelledby="warningModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="title" id="dayTitle">Desk is about to move in x minutes</p>
+                <p class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></p>
+            </div>
+            <div class="modal-body">
+                <form id="warningForm">
+                    {{-- <input type="hidden" name="id" id="id" value="0">
+                    <input type="hidden" name="day" id="day" value="">
+
+                    <label for="startTime">Start time</label>
+                    <input type="time" name="startTime" id="startTime" min="00:00" max="23:59">
+
+                    <label for="endTime">End time</label>
+                    <input type="time" name="endTime" id="endTime" min="00:00" max="23:59"> --}}
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default close" data-bs-function="close" data-bs-dismiss="modal">Close</button>
+                {{-- <button type="button" class="btn btn-danger delete" data-bs-function="delete" onclick="deleteEntry()">delete</button>
+                <button type="button" class="btn btn-primary save" id="save" data-bs-dismiss="modal" data-bs-function="save" onclick="save()">Save</button> --}}
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="schedule-active" onclick="popup(this, false)">
 
     </div>
+
 

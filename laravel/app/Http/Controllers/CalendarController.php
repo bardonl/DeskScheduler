@@ -22,6 +22,6 @@ class CalendarController extends Controller
 
         $scheduled = $scheduleController->getScheduled();
 
-        return view('dashboard',['days' => $days, 'scheduled' => $scheduled]);
+        return view('dashboard',['days' => $days, 'scheduled' => $scheduled, 'currentDay' => date('n', date("d")) - 1]);
     }
 }

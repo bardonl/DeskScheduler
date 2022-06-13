@@ -171,3 +171,56 @@ timeEditor.addEventListener('hide.bs.modal', function (event) {
 
     close();
 })
+
+var warning = document.getElementById('warning')
+warning.addEventListener('hide.bs.modal', function (event) {
+    var $activeElement = $(document.activeElement);
+
+    if ($activeElement.is('[data-bs-function=save]')) {
+        close(true);
+    }
+
+    close();
+})
+
+
+$(document).ready(function(){
+    getInidicatorPosition();
+    let date = new Date();
+    let sec = date.getSeconds();
+    setTimeout(()=>{
+        setInterval(()=>{
+            getInidicatorPosition();
+        }, 60 * 1000);
+    }, (60 - sec) * 1000);
+});
+
+function getInidicatorPosition()
+{
+    var containerHeight = $('.hours-container').height();
+    var hour = moment().format('HH');
+    var day = $('.indicator').attr('data-day');
+    var quarter = Math.ceil(moment().format('mm')/15);
+    var indicatorHeight = $('.indicator').height() / 2;
+    var pos = (containerHeight/(24 * 60)) * (parseInt(moment().format('HH') * 60) + parseInt(moment().format('mm')));
+    var finalPos = pos + indicatorHeight - 1;
+    $('.indicator').css('top',finalPos);
+
+    var position = $('#'+day+'-'+hour+'-'+quarter+'-scheduled').position()
+    if(position){
+        var posDiff = position.top - pos - 5;
+        console.log(position.top);
+        console.log(posDiff%5);
+        if(posDiff <= 15){
+            if(posDiff%5 == 0){
+                $('#warning').modal('show');
+
+            }
+            const audio = new Audio("../sounds/notification.wav");
+                audio.play();
+            console.log(posDiff);
+        }
+    }
+
+
+}

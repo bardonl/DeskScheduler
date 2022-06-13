@@ -59,7 +59,7 @@ body {
 
 .scheduled {
     height: 15px;
-    width: 10%;
+    width: 80%;
     position: absolute;
     background-color: #3d4852 !important;;
 }
@@ -100,6 +100,10 @@ body {
     border-bottom: #6c757d solid 1px;
 }
 
+.hours-container {
+    position: relative;
+}
+
 .hour {
     height: 15px;
     border-bottom: #6c757d solid 1px;
@@ -123,3 +127,22 @@ body {
 .delete {
     display: none;
 }
+
+div.day-header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #6c757d;
+}
+
+.indicator {
+    height: 5px;
+    background-color: red;
+    position: relative;
+}
+
+.active-day {
+    top: -5px;
+}
+
